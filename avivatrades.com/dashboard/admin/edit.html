@@ -9588,7 +9588,7 @@
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://avivatrades-render-5c8b2a77cda8.herokuapp.com/users/${userFromLS.email}`,
+        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9624,7 +9624,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://avivatrades-render-5c8b2a77cda8.herokuapp.com/users/${currentUser._id}/profile/update`,
+        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -9657,7 +9657,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://avivatrades-render-5c8b2a77cda8.herokuapp.com/users/${currentUser._id}/accounts/update`,
+        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
@@ -9711,7 +9711,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://avivatrades-vercel-eb2ed2e925a5.herokuapp.com/auth/${currentUser._id}/reset-password`,
+        url: `https://aviva-vercel-839130e93929.herokuapp.com/auth/${currentUser._id}/reset-password`,
         dataType: "json",
         data: { password },
         timeout: 30000,

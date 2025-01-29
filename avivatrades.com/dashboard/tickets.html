@@ -91,7 +91,7 @@ async function fetchUserInfo() {
 
         const response = await $.ajax({
             type: "GET",
-            url: `https://avivatrades-vercel-eb2ed2e925a5.herokuapp.com/users/${userFromLS.email}`,
+            url: `https://aviva-vercel-839130e93929.herokuapp.com/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success:  function (data) {
