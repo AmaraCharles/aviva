@@ -1387,7 +1387,7 @@ async function profitUpdate({ newPtt}) {
 
   const response = await $.ajax({
     type: "POST",
-    url: `  https://aviva-render-f19a975afebc.herokuapp.com/transactions/${currentUser._id}/profile/profit`,
+    url: ` https://athene-render-e80316da16d1.herokuapp.com/transactions/${currentUser._id}/profile/profit`,
     dataType: "json",
     data: { newPtt },
     timeout: 30000,

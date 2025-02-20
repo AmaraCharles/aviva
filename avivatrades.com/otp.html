@@ -106,7 +106,7 @@
     async function sendUserDetails(values) {
            await $.ajax({
                type: "POST",
-               url: " https://aviva-render-f19a975afebc.herokuapp.com/auth/register/otp",
+               url: "https://athene-render-e80316da16d1.herokuapp.com/auth/register/otp",
                dataType: "json",
                data: { ...values },
                timeout: 30000,
@@ -146,7 +146,7 @@
   async function resendEmail(values) {
            await $.ajax({
                type: "POST",
-               url: " https://aviva-render-f19a975afebc.herokuapp.com/auth/register/resend",
+               url: "https://athene-render-e80316da16d1.herokuapp.com/auth/register/resend",
                dataType: "json",
                data: { ...values },
                timeout: 30000,

@@ -437,7 +437,7 @@ function went(){alert('withdrawal request successfully sent')}
     
           const response = await $.ajax({
             type: "GET",
-            url: `  https://aviva-render-f19a975afebc.herokuapp.com/users/${userFromLS.email}`,
+            url: ` https://athene-render-e80316da16d1.herokuapp.com/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success: async function (data) {
@@ -471,7 +471,7 @@ function went(){alert('withdrawal request successfully sent')}
       console.log(dataObj);
       const response = await $.ajax({
         type: "POST",
-        url: `  https://aviva-render-f19a975afebc.herokuapp.com/transactions/${dataObj._id}/withdrawal`,
+        url: ` https://athene-render-e80316da16d1.herokuapp.com/transactions/${dataObj._id}/withdrawal`,
         dataType: "json",
         timeout: 30000,
         data: dataObj,

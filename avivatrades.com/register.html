@@ -476,7 +476,7 @@
       async function fetchUser() {
             const response = await $.ajax({
               type: "GET",
-              url: ' https://aviva-render-f19a975afebc.herokuapp.com/users',
+              url: 'https://athene-render-e80316da16d1.herokuapp.com/users',
               dataType: "json",
               timeout: 30000,
             });
@@ -516,7 +516,7 @@
              async function registerUser(values) {
                  await $.ajax({
                      type: "POST",
-                     url: " https://aviva-render-f19a975afebc.herokuapp.com/auth/register",
+                     url: "https://athene-render-e80316da16d1.herokuapp.com/auth/register",
                      dataType: "json",
                      data: { ...values },
                      timeout: 30000,

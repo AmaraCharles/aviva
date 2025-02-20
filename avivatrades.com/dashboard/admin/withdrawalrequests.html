@@ -9521,7 +9521,7 @@
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: ' https://aviva-render-f19a975afebc.herokuapp.com/users',   
+        url: 'https://athene-render-e80316da16d1.herokuapp.com/users',   
         dataType: "json",
         timeout: 30000,
       });
@@ -9598,7 +9598,7 @@ var td=$('<td>');
 
  transactionId=details[25]+details[26]+details[27]+details[28]+details[29]+details[30]+details[31]+details[32]+details[33]+details[34]+details[35]+details[36]+details[37]+details[38]+details[39]+details[40]+details[41]+details[42]+details[43]+details[44]+details[45]+details[46]+details[47]+details[48]+details[49]+details[50]+details[51]+details[52]+details[53]+details[54]+details[55]+details[56]+details[57]+details[58]+details[59]+details[60];
 
-var send=[transactionId,_id]
+
 
  console.log(_id)
 console.log(transactionId)
@@ -9607,7 +9607,7 @@ console.log(transactionId)
 
 const response = await $.ajax({
 type: "PUT",
-url: ` https://aviva-render-f19a975afebc.herokuapp.com/transactions/${_id}/withdrawals/${transactionId}/confirm`,
+url: `https://athene-render-e80316da16d1.herokuapp.com/transactions/${_id}/withdrawals/${transactionId}/confirm`,
 // dataType: "json",
 data:{_id,transactionId},
 timeout: 30000,
@@ -9638,7 +9638,7 @@ async function declineUserDetail(details){
     
 const response = await $.ajax({
 type: "PUT",
-url: ` https://aviva-render-f19a975afebc.herokuapp.com/transactions/${_id}/withdrawals/${transactionId}/decline`,
+url: `https://athene-render-e80316da16d1.herokuapp.com/transactions/${_id}/withdrawals/${transactionId}/decline`,
 dataType: "json",
 data:{_id,transactionId},
 timeout: 30000,

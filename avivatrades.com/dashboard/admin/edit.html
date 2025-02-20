@@ -9588,7 +9588,7 @@
 
       const response = await $.ajax({
         type: "GET",
-        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${userFromLS.email}`,
+        url: `https://athene-render-e80316da16d1.herokuapp.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9624,7 +9624,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${currentUser._id}/profile/update`,
+        url: `https://athene-render-e80316da16d1.herokuapp.com/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -9657,7 +9657,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: ` https://aviva-render-f19a975afebc.herokuapp.com/users/${currentUser._id}/accounts/update`,
+        url: `https://athene-render-e80316da16d1.herokuapp.com/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
