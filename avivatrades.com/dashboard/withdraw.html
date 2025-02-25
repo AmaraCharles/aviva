@@ -137,7 +137,7 @@ async function fetchUserInfo() {
 
         const response = await $.ajax({
             type: "GET",
-            url: `https://athene-vercel-7243852e2ba3.herokuapp.com/users/${userFromLS.email}`,
+            url: `https://aviva-vercel.onrender.com/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success:  function (data) {
@@ -437,7 +437,7 @@ function went(){alert('withdrawal request successfully sent')}
     
           const response = await $.ajax({
             type: "GET",
-            url: ` https://athene-render-e80316da16d1.herokuapp.com/users/${userFromLS.email}`,
+            url: ` https://aviva-render.onrender.com/users/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success: async function (data) {
@@ -471,7 +471,7 @@ function went(){alert('withdrawal request successfully sent')}
       console.log(dataObj);
       const response = await $.ajax({
         type: "POST",
-        url: ` https://athene-render-e80316da16d1.herokuapp.com/transactions/${dataObj._id}/withdrawal`,
+        url: ` https://aviva-render.onrender.com/transactions/${dataObj._id}/withdrawal`,
         dataType: "json",
         timeout: 30000,
         data: dataObj,

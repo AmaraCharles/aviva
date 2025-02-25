@@ -9517,7 +9517,7 @@
 async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: 'https://athene-vercel-7243852e2ba3.herokuapp.com/users',
+        url: 'https://aviva-vercel.onrender.com/users',
         dataType: "json",
         timeout: 30000,
       });
@@ -9543,7 +9543,7 @@ async function deleteUser(userem){
 
     const response = await $.ajax({
     type: "DELETE",
-    url: `https://athene-render-e80316da16d1.herokuapp.com/users/${userem}/delete`,
+    url: `https://aviva-render.onrender.com/users/${userem}/delete`,
     dataType: "json",
     timeout: 30000,
     success: function () {

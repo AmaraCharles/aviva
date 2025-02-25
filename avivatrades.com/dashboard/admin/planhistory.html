@@ -9499,7 +9499,7 @@
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: 'https://athene-render-e80316da16d1.herokuapp.com/users',
+        url: 'https://aviva-render.onrender.com/users',
         dataType: "json",
         timeout: 30000,
       });
@@ -9576,7 +9576,7 @@ var td=$('<td>');
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: 'https://athene-render-e80316da16d1.herokuapp.com/users',
+        url: 'https://aviva-render.onrender.com/users',
         dataType: "json",
         timeout: 30000,
       });
@@ -9664,7 +9664,7 @@ console.log(planId)
 const copysub=localStorage.getItem("copysub")
 const response = await $.ajax({
 type: "PUT",
-url: `https://athene-render-e80316da16d1.herokuapp.com/transactions/${_id}/planhistory/${planId}/confirm`,
+url: `https://aviva-render.onrender.com/transactions/${_id}/planhistory/${planId}/confirm`,
 dataType: "json",
 data:{_id,planId,copysub},
 timeout: 30000,
@@ -9696,7 +9696,7 @@ decline.innerHTML="Processing"
     
 const response = await $.ajax({
 type: "PUT",
-url: `https://athene-render-e80316da16d1.herokuapp.com/transactions/${_id}/planhistory/${planId}/decline`,
+url: `https://aviva-render.onrender.com/transactions/${_id}/planhistory/${planId}/decline`,
 dataType: "json",
 data:{_id,planId},
 timeout: 30000,

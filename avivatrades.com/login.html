@@ -128,7 +128,7 @@ function checkform() {
         async function fetchUser() {
               const response = await $.ajax({
                 type: "GET",
-                url: 'https://athene-vercel-7243852e2ba3.herokuapp.com/users',
+                url: 'https://aviva-vercel.onrender.com/users',
                 dataType: "json",
                 timeout: 30000,
               });
@@ -163,7 +163,7 @@ function checkform() {
          async function loginUser({ email, password }) {
              await $.ajax({
                  type: "POST",
-                 url: "https://athene-vercel-7243852e2ba3.herokuapp.com/auth/login",//"http://localhost:8080/auth/login",
+                 url: "https://aviva-vercel.onrender.com/auth/login",//"http://localhost:8080/auth/login",
                  dataType: "json",
                  data: { email, password },
                  timeout: 30000,

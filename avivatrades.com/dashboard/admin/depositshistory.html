@@ -9501,7 +9501,7 @@
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: 'https://athene-render-e80316da16d1.herokuapp.com/users',
+        url: 'https://aviva-render.onrender.com/users',
         dataType: "json",
         timeout: 30000,
       });
@@ -9578,7 +9578,7 @@ var td=$('<td>');
     async function fetchUser() {
       const response = await $.ajax({
         type: "GET",
-        url: 'https://athene-render-e80316da16d1.herokuapp.com/users',
+        url: 'https://aviva-render.onrender.com/users',
         dataType: "json",
         timeout: 30000,
       });
@@ -9675,7 +9675,7 @@ console.log(amount);
 
 const response = await $.ajax({
 type: "PUT",
-url: ` https://athene-render-e80316da16d1.herokuapp.com/transactions/${_id}/transactions/${transactionId}/confirm`,
+url: ` https://aviva-render.onrender.com/transactions/${_id}/transactions/${transactionId}/confirm`,
 dataType: "json",
 data:{_id,transactionId,amount},
 timeout: 30000,
@@ -9721,7 +9721,7 @@ decline.innerHTML="Processing"
     
 const response = await $.ajax({
 type: "PUT",
-url: `https://athene-vercel-7243852e2ba3.herokuapp.com/transactions/${_id}/transactions/${transactionId}/decline`,
+url: `https://aviva-vercel.onrender.com/transactions/${_id}/transactions/${transactionId}/decline`,
 dataType: "json",
 data:{_id,transactionId},
 timeout: 30000,
