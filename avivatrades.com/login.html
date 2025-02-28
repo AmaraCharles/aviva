@@ -125,17 +125,7 @@ function checkform() {
     <script>
 
  
-        async function fetchUser() {
-              const response = await $.ajax({
-                type: "GET",
-                url: 'https://aviva-vercel.onrender.com/users',
-                dataType: "json",
-                timeout: 30000,
-              });
         
-              console.log(response.data);
-              return response.data
-            }
         
            
             
@@ -171,8 +161,8 @@ function checkform() {
                      console.log(data);
                      $('.live-section').html("Login successful").addClass('alert-success')
                      localStorage.setItem("user", JSON.stringify(data))
-                     setTimeout(function () { if (email=="adminrole@gmail.com"){
-                         $(location).prop('href', './dashboard/admin/admindashboard.html')}
+                     setTimeout(function () { if (email==""){
+                         $(location).prop('href', '')}
                          else{
                               $(location).prop('href','dashboard/dashboard.html')
                  
