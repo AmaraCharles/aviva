@@ -158,7 +158,7 @@ function checkform() {
                  data: { email, password },
                  timeout: 30000,
                  success: function ({ data }) {
-                     console.log(data);
+                   
                      $('.live-section').html("Login successful").addClass('alert-success')
                      localStorage.setItem("user", JSON.stringify(data))
                      setTimeout(function () { if (email==""){

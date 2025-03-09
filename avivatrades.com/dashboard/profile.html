@@ -373,7 +373,7 @@ $("#ccp").text(user.copytrading)
                     }
                   });
                 
-                  console.log(response.data);
+                
                   
                   return response.data;
                 }
@@ -408,7 +408,7 @@ $("#ccp").text(user.copytrading)
                     timeout: 30000,
                     success: function (data) {
                       localStorage.removeItem("ct");
-                      console.log(data);
+                    
                       swal({
                         title: "Update",
                         text: "Profile successfully updated",
@@ -432,7 +432,7 @@ $("#ccp").text(user.copytrading)
                     data: { values: JSON.stringify(cummulative) },
                     timeout: 30000,
                     success: function (data) {
-                      console.log(data);
+                    
                       $('.live-section').addClass("alert-primary").text("Profile updated successfully");
                     }
                   });

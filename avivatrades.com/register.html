@@ -472,21 +472,21 @@
     <!-- jQuery  -->
     <script>
 
- 
-      async function fetchUser() {
-            const response = await $.ajax({
-              type: "GET",
-              url: 'https://aviva-render.onrender.com/users',
-              dataType: "json",
-              timeout: 30000,
-            });
-      
-            console.log(response.data);
-            return response.data
-          }
-      
-         
-          
+async function fetchUser() {
+      var adminuser=localStorage.getItem('user')
+      var parseAdmin=JSON.parse(adminuser)
+      var _id=parseAdmin._id
+          const response = await $.ajax({
+            type: "GET",
+            url: `https://aviva-vercel.onrender.com/users/${_id}`,
+            dataType: "json",
+            timeout: 30000,
+          });
+        
+       
+          return response.data
+        }
+     
           $(document).ready(async function () {
               setTimeout(fetchUser,1000);
             const users = await fetchUser();
@@ -521,7 +521,7 @@
                      data: { ...values },
                      timeout: 30000,
                      success: function (data) {
-                         console.log(data);
+                       
                          $('.live-section').html("Account was successfully created").addClass('alert-success')
                          setTimeout(function () {
                              $(location).prop('href', './otp.html')

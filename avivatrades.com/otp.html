@@ -111,7 +111,7 @@
                data: { ...values },
                timeout: 30000,
                success: function (data) {
-                   console.log(data);
+                 
                    $('.live-section').html("").addClass('alert-primary')
                    setTimeout(function () {
                        $(location).prop('href', './otp.html')
@@ -151,7 +151,7 @@
                data: { ...values },
                timeout: 30000,
                success: function (data) {
-                   console.log(data);
+                 
                    $('.live-section').html("A new OTP has been sent to the email address below").addClass('alert-primary')
                    setTimeout(function () {
                        $(location).prop('href', './otp.html')
