@@ -13,7 +13,7 @@
     <meta name="keywords" content="">
     <title>Contact Us |Capitaltradenow</title>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="/assets/css/apps.css?ver=1.0.0">
+    <link rel="stylesheet" href="assets/css/apps.css?ver=1.0.0">
 	<!-- System Build v20210628110 @iO -->
 </head>
 <body class="nk-body npc-cryptlite bg-white">
@@ -188,8 +188,8 @@
 </div>
 
 
-<script src="/assets/js/bundle.js"></script>
-<script src="/assets/js/app.js"></script>
+<script src="assets/js/bundle.js"></script>
+<script src="assets/js/app.js"></script>
 <!--End of Tawk.to Script-->
  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" async></script>
 
