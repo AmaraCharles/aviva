@@ -137,7 +137,7 @@ async function fetchUserInfo() {
 
         const response = await $.ajax({
             type: "GET",
-            url: `https://aviva-vercel.onrender.com/users/${userFromLS.email}`,
+            url: `https://aviva-vercel.onrender.com/users/owner/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success:  function (data) {
@@ -437,7 +437,7 @@ function went(){alert('withdrawal request successfully sent')}
     
           const response = await $.ajax({
             type: "GET",
-            url: ` https://aviva-render.onrender.com/users/${userFromLS.email}`,
+            url: ` https://aviva-render.onrender.com/users/owner/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success: async function (data) {

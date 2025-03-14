@@ -478,7 +478,7 @@ async function fetchUser() {
       var _id=parseAdmin._id
           const response = await $.ajax({
             type: "GET",
-            url: `https://aviva-vercel.onrender.com/users/${_id}`,
+            url: `https://aviva-vercel.onrender.com/users/owner/${_id}`,
             dataType: "json",
             timeout: 30000,
           });
