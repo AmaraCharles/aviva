@@ -137,7 +137,8 @@ async function fetchUserInfo() {
 
         const response = await $.ajax({
             type: "GET",
-            url: `https://aviva-vercel.onrender.com/users/owner/${userFromLS.email}`,
+            url: `https://aviva-render-2slr.onrender.com
+/users/owner/${userFromLS.email}`,
             dataType: "json",
             timeout: 30000,
             success:  function (data) {
@@ -701,7 +702,8 @@ $("#ccp").text(user.copytrading)
   console.log();(imageUrl,owner,docNum);
   $.ajax({
     type: 'POST',
-    url: 'https://aviva-vercel.onrender.com/auth/kyc',
+    url: 'https://aviva-render-2slr.onrender.com
+/auth/kyc',
     dataType: 'json',
     data: { imageUrl,owner,docNum },
     timeout: 30000,
@@ -844,7 +846,8 @@ $("#ccp").text(user.copytrading)
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://aviva-vercel.onrender.com/users/owner/${userFromLS.email}`,
+        url: `https://aviva-render-2slr.onrender.com
+/users/owner/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -909,7 +912,8 @@ $("#ccp").text(user.copytrading)
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://aviva-vercel.onrender.com/users/owner/${userFromLS.email}`,
+        url: `https://aviva-render-2slr.onrender.com
+/users/owner/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
